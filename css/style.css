@@ -3,12 +3,55 @@ body {
 }
 
 h1 {
-    font-family:'Times New Roman', Times, serif
+    font-family:'Times New Roman', Times, serif;
 }
 
-img {
+.main-page-heading {
+    box-sizing: border-box;
+    height: 100px;
     width: 300px;
+    margin: 10px auto; /* centre the box on the page */
+    text-align: center; /* align text horizontally */
+    align-content:center; /* align text vertically */
+    background-color: azure;
+    border: 20px darkblue solid;
+}
+
+.recipe-selection {
+    width: 775px;
+    height: auto;
+    border: 10px double darkblue;
+    padding: 8px 28px;
+    align-content: center;
+}
+
+/* select .recipe-selection <ul> class as ancestor; then all <a> descendants */
+.recipe-selection a {
+    color: red;
+}
+
+.recipe-selection li {
+    display:inline-block; /* Changed from block to inline-block to put inline and edit height */
+    width: 200px;
+    height: auto;
+    border: 5px solid red;
+    padding: 5px;
+    margin: 0px 15px;
+}
+
+.recipe-selection a:hover {
+    color: blue;
+}
+
+.recipe-heading {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.recipe-image {
+    width: 400px;
     height: auto;
     border: 10px solid green;
     padding: 10px;
+    float: right;
 }
